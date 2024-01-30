@@ -20,6 +20,6 @@ from django.contrib import admin
 from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bara/', include("blog.urls")),
+    path('capy/', include("blog.urls")),
 
 ]
