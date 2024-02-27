@@ -1,6 +1,6 @@
 from django.urls import path
-from . import  views
+from . import views
 
 urlpatterns = {
-    path("randomnumber/", views.models_list)
+    path("randomnumber/", views.blog_list, name="blog_list")
 }
