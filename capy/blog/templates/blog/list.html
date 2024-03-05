@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pozvanka na Oslavu</title>
+  <title>Náhodné číslo</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       text-align: center;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #fff;
+      color: #ff0000;
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      flex-direction: column;,
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 3em;
+      margin-bottom: 5px;
     }
 
     .colorful {
@@ -48,43 +48,38 @@
     }
 
     li {
-      font-size: 1.2em;
+      font-size: 2em;
       margin-bottom: 10px;
     }
 
-    img {
-      width: 60%;
-      max-width: 400px;
-      height: auto;
-      margin: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    button {
+      font-size: 1.5em;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #2ecc71;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
     }
 
-    .signature {
-      font-size: 0.8em;
-      font-family: 'Courier New', Courier, monospace;
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
+    button:hover {
+      background-color: #f4fc02;
     }
 
-    .date {
-      font-weight: bold;
-      text-decoration: underline;
-      margin-top: 10px;
-    }
   </style>
 </head>
 <body>
 
-  <h1><span class="colorful"><span>P</span><span>O</span><span>Z</span><span>V</span><span>A</span><span>N</span><span>K</span><span>A</span></span></h1>
+  <h1><span class="colorful"><span>N</span><span>Á</span><span>H</span><span>O</span><span>D</span><span>N</span><span>É</span></span></h1>
+  <h1><span class="colorful"><span>Č</span><span>Í</span><span>S</span><span>L</span><span>O</span></span></h1>
 
   <ul>
-    <li>{{random_text}}</li>
-    <li>Prineste si dobrou naladu</li>
-    <li>Neco k jidlu</li>
+    <li>{{random_number}}</li>
   </ul>
 
-  <img src="https://contenutigratis.altervista.org/wp-content/uploads/2022/08/come-decorare-la-propria-festa-con-i-palloncini.jpg" alt="">
-  <p class="signature">Alex Nolf</p>
+  <button onclick="location.reload()">Obnovit stránku</button>
+
+</body>
+</html>
